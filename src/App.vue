@@ -19,10 +19,10 @@
         <!-- Like this: "Test" => Gets Filtered to => "Test (4)" -->
 
         <!-- ToDo 4 -->
-        <!-- Do the same as in Exercises 1 & 2, now with Computed Properties -->
+        <!-- Do the same as in ToDo 2 & 3, now with Computed Properties -->
 
         <!-- ToDo 5 -->
-        <!-- Share the Computed Property rebuilding Exercise 2 via a Mixin -->
+        <!-- Share the Computed Property rebuilding ToDo 4 via a Mixin -->
       </div>
     </div>
   </div>
