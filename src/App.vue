@@ -44,3 +44,4 @@ export default {
   mixins: [countMixin]
 };
 </script>
+<style></style>
