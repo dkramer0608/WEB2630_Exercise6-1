@@ -65,12 +65,11 @@ Vue.filter("first4Chars", str => str.substring(0, 4))
 Vue.filter("last4Chars", str => str.substring(str.length - 4))
 
 import Vue from 'vue'
-import App from './App'
-import "./filters"
+import App from './main'
 
 new Vue({
-  el: '#app',
-  template: '<App/>',
+  el: '#main',
+  template: '',
   components: { App },
 })
 
