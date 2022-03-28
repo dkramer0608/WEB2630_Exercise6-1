@@ -18,3 +18,36 @@ Vue.mixin({
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
+
+
+export default {
+
+  methods: {
+
+    alertMe() {
+
+      alert('The Alert!');
+
+    }
+
+  },
+
+  directives: {
+
+    'my-on': {
+
+      bind(el, binding) {
+        el.addEventListener(binding.arg, binding.value);
+      },
+
+      unbind(el, binding) {
+        el.removeEventListener(binding.arg, binding.value);
+      }
+
+    }
+
+  }
+
+}
+
