@@ -30,7 +30,7 @@
 
 <script>
 
-import {countMixin} from "./main.js"; 
+import {countMixin} from "./countMixin"; 
 
 export default {
   name: "App",
