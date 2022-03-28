@@ -60,14 +60,6 @@ export default {
   }
 };
 
-export default {
-    name: 'app',
-		data(){
-			return {
-				message:"Test (1)"
-			}
-		}
-  }
 
 Vue.filter("first4Chars", str => str.substring(0, 4))
 Vue.filter("last4Chars", str => str.substring(str.length - 4))
