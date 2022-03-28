@@ -22,7 +22,7 @@
 
 <script>
 
-import {countMixin} from "./countMixin"; 
+import {countMixin} from "./main.js"; 
 export default {
   name: "App",
   data() {
