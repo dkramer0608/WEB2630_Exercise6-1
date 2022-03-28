@@ -11,24 +11,29 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
         <h1>Filters & Mixins</h1>
-        <!-- ToDo 2 -->
-        <!-- Build a local Filter which reverses the Text it is applied on -->
+         <h1>Filters & Mixins</h1>
 
-        <!-- ToDo 3 -->
-        <!-- Build a global Filter which counts the length of a word and it appends it -->
-        <!-- Like this: "Test" => Gets Filtered to => "Test (4)" -->
+        <input type="text" class="form-control" v-model="text"/>
+        <p>{{text|reverseText}}</p>
 
-        <!-- ToDo 4 -->
-        <!-- Do the same as in ToDo 2 & 3, now with Computed Properties -->
 
-        <!-- ToDo 5 -->
-        <!-- Share the Computed Property rebuilding ToDo 4 via a Mixin -->
+        <input type="text" class="form-control" v-model="textCount"/>
+        <p>{{textCount|countText}}</p>
+
+
+        <input type="text" class="form-control" v-model="textCom"/>
+        <p>{{textReverseComputed}}</p>
+
+
+        <input type="text" class="form-control" v-model="textCount"/>
+        <p>{{textCountComputed}}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
 
   methods: {
@@ -56,10 +61,26 @@ export default {
       }
 
     }
-
-
-
 }
+
+import {countMixin} from "./countMixin"; 
+
+export default {
+  name: "App",
+  data() {
+    return {
+      text: "",
+      textCount: "",
+      textCom: "Test",
+    };
+  },
+
+  mixins: [countMixin]
+  
+};
+
+
+
 </script>
 
 <style></style>
